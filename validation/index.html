@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Regular Expression</title>
+    <script src="https://kit.fontawesome.com/98524e1767.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="shortcut icon" class="text-xl" href="./img/regex.png" type="image/x-icon">
+</head>
+<body>
+    <section class="relative isolate overflow-hidden bg-indigo-300 pt-16 ">
+        <div class="container px-5 mx-auto ">
+            <div class="flex flex-wrap items-center text-center justify-center mb-12 mx-8">
+                <h1 class="text-4xl font-extrabold text-gray-800 flex-row mr-2">Tugas Regular Expression </h1> 
+                <a href="" class="flex-row">
+                    <svg width="40px" height="40px" viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="2.64"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:#2a27b9;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="a" cx="24" cy="24" r="21.5"></circle><path class="a" d="M15,30.23V17.48h4.18a4.29,4.29,0,0,1,0,8.57H15"></path><line class="a" x1="19.17" y1="26.05" x2="23.34" y2="30.23"></line><line class="a" x1="32.99" y1="21.78" x2="26.61" y2="30.23"></line><line class="a" x1="32.99" y1="30.23" x2="26.61" y2="21.78"></line><path class="a" d="M14.6,10.18,7.87,26"></path><path class="a" d="M40.13,22,33.4,37.82"></path></g></svg>
+                </a>
+            </div>
+
+            <div class="container bg-white/50 backdrop-blur rounded-lg border border-white lg:w-1/2 items-center justify-center mx-auto">
+                <div class=" mb-4  max-w-md mx-auto md:items-center md:justify-center lg:items-center lg:justify-center items-center justify-center rounded-lg">
+                    <div class="p-0 border-none justify-center items-center">
+                        <article class="border border-transparent rounded-lg p-4 mb-2">
+                            <h2 class="text-lg text-gray-950 font-medium mb-2"><span><i class="fa-solid fa-user text-sm"></i></span> Username</h2>
+                            <div class="flex text-center max-w-md ">
+                                <input id="username" name="user" type="text" class=" min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-black ring-inset ring-offset-0 focus:ring-2 focus:ring-violet-500 sm:text-sm sm:leading-6" placeholder="Input a Username">
+                            </div>
+                            <p class="leading-none pt-1 text-xs text-violet-300"></p>
+                        </article>
+                        <article class="border border-transparent rounded-lg p-4 mb-2">
+                            <h2 class="text-lg text-gray-950 font-medium  mb-2"><span><i class="fa-solid fa-envelope text-sm"></i></span> E-mail</h2>
+                            <div class="flex text-center max-w-md">
+                                <input id="email" name="email" type="text" class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-black ring-inset ring-offset-0 focus:ring-2 focus:ring-violet-500 sm:text-sm sm:leading-6" placeholder="Input an E-mail">
+                            </div>
+                            <p class="leading-none pt-1 text-xs text-blue-300"></p>
+                        </article>
+                        <article class=" border-transparent rounded-lg p-4 mb-2">
+                            <h2 class="text-lg text-gray-950 font-medium  mb-2"><span><i class="fa-solid fa-phone text-sm"></i></span> Telephone</h2>
+                            <div class="flex text-center max-w-md">
+                                <input id="phone" name="phone" type="text" class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-black ring-inset ring-offset-0 focus:ring-2 focus:ring-violet-500 sm:text-sm sm:leading-6" placeholder="Input a Telephone">
+                            </div>
+                            <p class="leading-none pt-1 text-xs text-blue-300"></p>
+                        </article>
+                        <article class="border border-transparent rounded-lg p-4 mb-2">
+                            <h2 class="text-lg text-gray-950 font-medium mb-2"><span><i class="fa-solid fa-link text-sm"></i></span> Slug</h2>
+                            <div class="flex text-center max-w-md">
+                                <input id="slug" name="slug" type="text" class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-black ring-inset ring-offset-0 focus:ring-2 focus:ring-violet-500 sm:text-sm sm:leading-6" placeholder="Input a Slug">
+                            </div>
+                            <p class="leading-none pt-1 text-xs text-blue-300"></p>
+                        </article>
+                        <article class="border border-transparent rounded-lg p-4 mb-2">
+                            <h2 class="text-lg text-gray-950 font-medium mb-2"><span><i class="fa-solid fa-location-dot text-sm"></i></span> Zip Code</h2>
+                            <div class="flex text-center max-w-md">
+                                <input id="zip-code" name="zip" type="text" class="min-w-0 flex-auto rounded-md bg-white px-3.5 py-2 text-black ring-inset ring-offset-0 focus:ring-2 focus:ring-violet-500 sm:text-sm sm:leading-6" placeholder="Input a Zip Code">
+                            </div>
+                            <p class="leading-none pt-1 text-xs text-blue-300"></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <svg height="728px" width="961px" class="">
+            <filter id="grainy">
+                <feTurbulence type="fractalNoise" baseFrequency="0.6"/>
+                <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            </filter>
+            <path xmlns="http://www.w3.org/2000/svg" d="M76.5 361.5C-14.9753 272.022 59.4634 213.991 108.3 196.073C104.711 197.276 85.0286 198.846 32.5 196C-34.5 192.37 9.99998 135.5 108.5 172C207 208.5 164.5 86 445.5 18.5C726.5 -49 457 88.5 391.5 252.5C326 416.5 541 260.5 617.5 423C694 585.5 476.5 508 358.5 571C240.5 634 191 473.5 76.5 361.5Z" filter="url(#grainy)"/>
+        </svg> -->
+
+        <footer class="mt-10 flex justify-center mb-8  mx-10">
+            <!-- <div id="footer" class=" flex">
+                <a href="" class="text-sm flex ">Tugas 4</a>   
+                <div class="bg-white rounded-lg px-0.5 py-2 items-center justify-center flex"></div>
+                <p class="py-3 text-sm "> Elisabet Simanjuntak </p>
+            </div>  -->
+        </footer>
+        
+        <svg class="absolute top-0 -z-10 -translate-x xl:top-6" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="0.6"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="53" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="197" ry="277.5" cx="605.5724487304688" cy="617.2620239257812" fill="hsla(242, 54%, 62%, 1.00)"></ellipse><ellipse rx="197" ry="277.5" cx="632.0591430664062" cy="362.3841552734375" fill="hsla(0, 0%, 71%, 1.00)"></ellipse><ellipse rx="197" ry="277.5" cx="328.41058349609375" cy="269.0380859375" fill="hsla(290, 57%, 64%, 1.00)"></ellipse></g></svg>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
