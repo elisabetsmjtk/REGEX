@@ -596,16 +596,8 @@ video {
   position: relative;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-32 {
-  top: 8rem;
+.top-0 {
+  top: 0px;
 }
 
 .isolate {
@@ -933,11 +925,5 @@ video {
 
   .lg\:justify-center {
     justify-content: center;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:top-6 {
-    top: 1.5rem;
   }
 }
