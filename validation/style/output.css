@@ -596,8 +596,8 @@ video {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
+.top-20 {
+  top: 5rem;
 }
 
 .isolate {
@@ -929,7 +929,7 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:top-0 {
-    top: 0px;
+  .xl\:top-1 {
+    top: 0.25rem;
   }
 }
